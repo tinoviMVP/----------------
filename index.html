@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список Студентов</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="addStudent">
+        <h2>Добавить студента</h2>
+        <div class="studentInputs">
+            <input type="text" placeholder="Фамилия" id="surname">
+            <input type="text" placeholder="Имя" id="name">
+            <input type="number" placeholder="Возраст" id="age">
+        </div>
+        <button id="addStudentBtn" onclick="addStudent()">Добавить</button>
+        <h3>Список студентов</h3>
+        <h4>Фамилия, Имя, Возраст:</h4>
+        <div class="groupList">
+        </div>
+    </div>
+    <script src="./sctipt.js"></script>
+</body>
+
+</html>
