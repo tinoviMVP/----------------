@@ -3,23 +3,23 @@
 let students = [];
 
 function addStudent() {
-  let studentSurname = document.getElementById("surname").value;
   let studentName = document.getElementById("name").value;
+  let studentSurname = document.getElementById("surname").value;
   let studentAge = document.getElementById("age").value;
   let student = {
-    surname: "surname",
     name: "name",
+    surname: "surname",
     age: 0,
   };
 
-  student.surname = studentSurname;
   student.name = studentName;
+  student.surname = studentSurname;
   student.age = studentAge;
 
   students.push(Object.values(student));
 
-  document.getElementById("surname").value = "";
   document.getElementById("name").value = "";
+  document.getElementById("surname").value = "";
   document.getElementById("age").value = "";
   showStudent();
 }
